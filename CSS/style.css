@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Kufi Arabic", sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  height: 90vh;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #444444;
+  height: 60px;
+  width: 100%;
+  padding: 0 50px;
+}
+
+header nav .site,
+header nav .active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .site img {
+  width: 150px;
+  margin: 0 18px;
+
+}
+
+header nav .site a,
+header nav .active a {
+  padding: 22px 18px;
+  font-size: 14px;
+  transition: 0.2s ease all;
+}
+
+header nav .active a {
+  font-size: 18px;
+}
+
+header nav .site a:hover,
+header nav .active a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+header nav .active img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+header .hero {
+  background: url("../imgs/bg-hero.jpg") no-repeat center/cover;
+  height: calc(90vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header .hero .text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+header .hero .text h1 {
+  font-size: 36px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+header .hero .text p {
+  font-size: 15px;
+  margin: 0 auto 30px;
+  color: #545454;
+}
+
+header .hero .search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+header .hero .search input {
+  width: 675px;
+  height: 65px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+header .hero .search button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 22px;
+  height: 53px;
+  left: 1%;
+  font-size: 16px;
+  background-color: #52b035;
+  border: 1px solid #52b035;
+  color: white;
+  cursor: pointer;
+}
+
+header .hero .words {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 675px;
+  margin-top: 10px;
+}
+
+header .hero .words button,
+.wanted button {
+  padding: 4px 8px;
+  margin: 0 5px;
+  font-size: 14px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+header .hero .words button a,
+.wanted button a {
+  color: #545454;
+}
+
+header .hero .words button:hover {
+  background-color: #52b035;
+  border: 1px solid #52b035;
+}
+
+header .hero .words button:hover a {
+  color: white;
+}
+
+main .services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
+}
+
+main .services h1,
+main .common h1,
+main .wanted h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+main .services .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+main .services .row .card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+main .services .row .card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.5);
+}
+
+main .services .row .card h2 {
+  position: absolute;
+  color: white;
+  font-weight: normal;
+}
+
+main .common,
+main .wanted {
+  background-color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 100px 0;
+}
+
+main .common .contain {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .common .contain .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+main .common .contain .row .col {
+  width: 350px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  height: 75px;
+  padding: 20px;
+}
+
+main .common .contain .row .col h3 {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+main .sellers {
+  padding: 65px 0 35px 0;
+}
+
+main .sellers .row {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+main .sellers .row .head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+main .sellers .row .head h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+main .sellers .row .head button {
+  padding: 3px 10px;
+  background: none;
+  color: #52b035;
+  border: 1px solid #52b035;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+main .sellers .row .head button:hover {
+  background-color: #52b035;
+  color: white;
+}
+
+main .sellers .row .col {
+  padding: 0 12px;
+  width: 25%;
+  cursor: pointer;
+}
+
+main .sellers .row .col > img {
+  width: 100%;
+}
+
+main .sellers .row .col .details h4 a {
+  color: black;
+  font-size: 13px;
+}
+
+main .sellers .row .col .details p {
+  font-size: 12px;
+  color: #545454;
+}
+
+main .sellers .row .col .details .rate {
+  display: flex;
+  align-items: center;
+}
+
+main .sellers .row .col .details .rate img {
+  width: 100px;
+  padding-left: 5px;
+}
+
+main .wanted h1 {
+  margin-bottom: 50px;
+}
+
+footer .links {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  padding: 3rem 100px 5rem 100px;
+}
+
+footer .links a {
+  color: #545454;
+}
+
+footer .links .main:last-of-type {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+  width: 25%;
+  padding: 0 12px;
+}
+
+footer .links .main {
+  width: 30%;
+  margin: 0 20px;
+}
+
+footer .links div h4 {
+  font-size: 16px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+footer .links div ul {
+  list-style: none;
+  line-height: 2;
+}
+
+footer .links div ul li a {
+  font-size: 11px;
+  color: #545454;
+}
+
+footer .links .social {
+  margin-bottom: 3rem;
+}
+
+footer .links .social div {
+  display: flex;
+}
+
+footer .links .social .facebook {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3B5998;
+  color: white;
+  margin-left: 10px;
+}
+
+footer .links .social .twitter {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #55ACEE;
+  color: white;
+}
+
+footer .links .payment svg {
+  fill: #737373;
+}
+
+footer .copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+  height: 60px;
+  background-color: #f1f1f1;
+}
+
+footer .copy a {
+  color: black;
+  padding: 10px;
+}
+
+footer .hasop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 40px 0;
+}
+
+footer .hasop img {
+  height: 36px;
+}
+
+footer .hasop .content {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+  width: 1250px;
+  margin: 8px auto;
+}
+
+footer .hasop .content div {
+  padding: 15px;
+  cursor: pointer;
+  width: 205px;
+}
+
+footer .hasop .content div span {
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+footer .hasop .content div p {
+  font-size: 11px;
+  color: #777;
+}
